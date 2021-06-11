@@ -14,5 +14,8 @@
   },
   "devDependencies": {
     "lerna": "^3.16.4"
+  },
+  "dependencies": {
+    "@sanity/code-input": "^2.9.0"
   }
 }
