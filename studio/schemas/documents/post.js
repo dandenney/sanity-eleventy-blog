@@ -6,6 +6,11 @@ export default {
   title: 'Blog Post',
   fields: [
     {
+      name: 'codeInput',
+      title: 'Code Input',
+      type: 'code'
+    },
+    {
       name: 'title',
       type: 'string',
       title: 'Title',
@@ -66,11 +71,6 @@ export default {
       name: 'body',
       type: 'bodyPortableText',
       title: 'Body'
-    },
-    {
-      name: 'codeInput',
-      title: 'Code Input',
-      type: 'code'
     }
   ],
   orderings: [
