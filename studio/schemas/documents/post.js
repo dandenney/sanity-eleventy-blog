@@ -1,4 +1,4 @@
-import {format} from 'date-fns'
+import { format } from 'date-fns'
 
 export default {
   name: 'post',
@@ -66,6 +66,11 @@ export default {
       name: 'body',
       type: 'bodyPortableText',
       title: 'Body'
+    },
+    {
+      name: 'codeInput',
+      title: 'Code Input',
+      type: 'code'
     }
   ],
   orderings: [
@@ -105,7 +110,7 @@ export default {
       slug: 'slug',
       media: 'mainImage'
     },
-    prepare ({title = 'No title', publishedAt, slug = {}, media}) {
+    prepare({ title = 'No title', publishedAt, slug = {}, media }) {
       const dateSegment = format(publishedAt, 'YYYY/MM')
       const path = `/${dateSegment}/${slug.current}/`
       return {
